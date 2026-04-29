@@ -1,0 +1,31 @@
+# Python Host Discovery
+
+Esta es una herramienta de reconocimiento de una red, esta diseñada para identificar host activos en una red mediante el **Protocolo ICMP**.
+Utiliza una libreria especial para eso, que es la libreria `icmplib` para realizar **pings** automaticos de una manera eficiente
+Tambien use una validacion de IPs con la libreria ipaddress
+## funcionalidades
+
+- **Single Host Scan:** Verifica si esta activa una IP especifica.
+- **Network Discovery:** Escanea redes completas **(notacion: CIRD. Ej: 192.168.1.0/24).
+- **Métricas de Red:** Aparte de ifcormar la si esta activa, muestra el tiempo promedio de respuesta (RRT) y los paquetes que fueron enviados
+
+## Requisitos
+- Python 3.X
+- icmplib
+- ipaddress
+
+Para instalar las dependencias, ejecuta:
+
+```bash
+pip install -r requirements.txt
+
+## Uso 
+
+Para correr el detector de hosts ejecuta el siguente comando:
+sudo python main.py (Necesita permisos de administrador para funcionar correctamente)
+
+## Disclairmer
+
+Herramienta creada unicamente para fines eticos y educativos, No utilizarla sin autorizacion en redes ajenas.
+
+Desarrollado por Miguel Sebastian Mendoza Choquehuanca
