@@ -12,7 +12,7 @@ También emplea validación de direcciones IP mediante la librería `ipaddress`.
 - **Network Discovery:** Escanea redes completas utilizando notación CIDR (Ej: `192.168.1.0/24`).
 - **Métricas de Red:** Además de informar si un host está activo, muestra el tiempo promedio de respuesta (**RTT**) y la cantidad de paquetes enviados.
 
-## 📋 Requisitos
+## Requisitos
 
 - Python 3.x
 - icmplib
@@ -36,10 +36,10 @@ sudo python main.py
 
 > Se requieren permisos de administrador para que el escaneo ICMP funcione correctamente.
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 Herramienta creada únicamente con fines educativos y éticos. No utilizar sin autorización en redes ajenas.
 
-## 👨‍💻 Autor
+## Autor
 
 Desarrollado por Miguel Sebastián Mendoza Choquehuanca.
