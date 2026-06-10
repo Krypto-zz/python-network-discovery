@@ -1,31 +1,45 @@
 # Python Host Discovery
 
-Esta es una herramienta de reconocimiento de una red, esta diseñada para identificar host activos en una red mediante el **Protocolo ICMP**.
-Utiliza una libreria especial para eso, que es la libreria `icmplib` para realizar **pings** automaticos de una manera eficiente
-Tambien use una validacion de IPs con la libreria ipaddress
-## funcionalidades
+Esta es una herramienta de reconocimiento de red diseñada para identificar hosts activos mediante el **protocolo ICMP**.
 
-- **Single Host Scan:** Verifica si esta activa una IP especifica.
-- **Network Discovery:** Escanea redes completas **(notacion: CIRD. Ej: 192.168.1.0/24).
-- **Métricas de Red:** Aparte de ifcormar la si esta activa, muestra el tiempo promedio de respuesta (RRT) y los paquetes que fueron enviados
+Utiliza la librería `icmplib` para realizar **pings** automáticos de manera eficiente.
 
-## Requisitos
-- Python 3.X
+También emplea validación de direcciones IP mediante la librería `ipaddress`.
+
+## Funcionalidades
+
+- **Single Host Scan:** Verifica si una dirección IP específica está activa.
+- **Network Discovery:** Escanea redes completas utilizando notación CIDR (Ej: `192.168.1.0/24`).
+- **Métricas de Red:** Además de informar si un host está activo, muestra el tiempo promedio de respuesta (**RTT**) y la cantidad de paquetes enviados.
+
+## 📋 Requisitos
+
+- Python 3.x
 - icmplib
 - ipaddress
 
-Para instalar las dependencias, ejecuta:
+## Instalación
+
+Instala las dependencias ejecutando:
 
 ```bash
 pip install -r requirements.txt
+```
 
-## Uso 
+## Uso
 
-Para correr el detector de hosts ejecuta el siguente comando:
-sudo python main.py (Necesita permisos de administrador para funcionar correctamente)
+Para ejecutar el detector de hosts:
 
-## Disclairmer
+```bash
+sudo python main.py
+```
 
-Herramienta creada unicamente para fines eticos y educativos, No utilizarla sin autorizacion en redes ajenas.
+> Se requieren permisos de administrador para que el escaneo ICMP funcione correctamente.
 
-Desarrollado por Miguel Sebastian Mendoza Choquehuanca
+## ⚠️ Disclaimer
+
+Herramienta creada únicamente con fines educativos y éticos. No utilizar sin autorización en redes ajenas.
+
+## 👨‍💻 Autor
+
+Desarrollado por Miguel Sebastián Mendoza Choquehuanca.
